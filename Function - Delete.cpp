@@ -26,20 +26,7 @@ int logDelete()
 
 		sqlDelete(deleteEntry);
 
-		/*
-		deleteEntry = "D:/C++/Journal Database/Journal Entries/" + deleteEntry + ".txt";
 
-		if (std::filesystem::remove(deleteEntry))
-		{
-			std::cout << "\n Entry " << deleteEntry << " deleted.\n\n";
-			funcLoop = false;
-		}
-
-		else
-		{
-			std::cout << "\n Entry " << deleteEntry << " not found.\n\n";
-		}
-		*/
 		return 0;
 	} while (funcLoop == true);
 

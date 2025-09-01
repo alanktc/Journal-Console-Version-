@@ -24,31 +24,7 @@ int logRead()
 		sqlRead(nameEntry);
 		funcLoop = false;
 
-		/*
-		nameEntry = "D:/C++/Journal Database/Journal Entries/" + nameEntry + ".txt";
-		std::string txtEntry;
-		
-		std::ifstream targetEntry;
-		targetEntry.open(nameEntry);
-
-		if (targetEntry.is_open())
-		{
-			while (std::getline(targetEntry >> std::ws, txtEntry));
-			{
-				std::cout << '\n' << "Found it!" << "\n\n" << txtEntry << "\n\n";
-			}
-
-			targetEntry.close();
-			funcLoop = false;
-		}
-		
-
-
-		else
-		{
-			std::cout << "\n No such entry exists. Please enter again. Or type \"exit\" to leave \n\n";
-		}
-		*/
+	
 	} while (funcLoop == true);
 
 	//Send request to database for entry
